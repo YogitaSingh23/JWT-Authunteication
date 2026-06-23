@@ -3,4 +3,5 @@ hello world new ta
 """
 
 def func():
-    return 1
+    a = 1
+    return a
