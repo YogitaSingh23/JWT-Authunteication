@@ -74,11 +74,6 @@ def me(current_user: models.User = Depends(get_current_user)):
         "email": current_user.email
     }
 
-# @router.get("/users")
-# def all_data(db:Session = Depends(get_db)):
-#     users = db.query(models.User).all()
-#     return users
-
 @router.get("/users")
 def get_users(
     db: Session = Depends(get_db),
